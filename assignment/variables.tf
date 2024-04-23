@@ -6,12 +6,14 @@ variable "name" {
 
 variable "subscription_id" {
         description = "The subscription ID of the Policy Assignment."
+        type = string
         
   
 }
 
 variable "policy_definition_id" {
     description = "The ID of the Policy Definition."
+    type = string
     
   
 }
