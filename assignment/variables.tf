@@ -30,5 +30,10 @@ variable "identity_type" {
 
 variable "parameters" {
   type = string
-  default = "{\"tagName\": \"Platform\"}"
+  description = "JSON string for the parameters of the policy assignment"
+  default = jsonencode({
+    tagName = {
+      value = "Platform"
+    }
+  })
 }
