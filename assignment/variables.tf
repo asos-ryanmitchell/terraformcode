@@ -28,10 +28,6 @@ variable "identity_type" {
     default = "SystemAssigned"
 }
 
-variable "parameters" {
-  description = "The parameters for the Policy Assignment."
-  type = map(string)
-default = {
-    tagName = "Platform"
+ variable "parameters" {
+    type = string
   }
-}

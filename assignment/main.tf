@@ -7,6 +7,7 @@ resource "azurerm_subscription_policy_assignment" "inheritSubscriptionTag" {
   identity {
     type = var.identity_type
   }
-
   parameters = jsonencode(var.parameters)
+
+  
 }
