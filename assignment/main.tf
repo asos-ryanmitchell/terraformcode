@@ -1,4 +1,4 @@
-resource "azurerm_policy_assignment" "inheritSubscriptionTag" {
+resource "azurerm_subscription_policy_assignment" "inheritSubscriptionTag" {
   name                 = var.name
   subscription_id      = var.subscription_id
   policy_definition_id = var.policy_definition_id
