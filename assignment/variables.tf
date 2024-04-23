@@ -6,13 +6,13 @@ variable "name" {
 
 variable "subscription_id" {
         description = "The subscription ID of the Policy Assignment."
-        default = format("/subscriptions/%s", azurerm_subscription.AzurePracticeSubRyan.subscription_id)
+        
   
 }
 
 variable "policy_definition_id" {
     description = "The ID of the Policy Definition."
-    default = azurerm_policy_definition.inheritSubscriptionTag.id
+    
   
 }
 
