@@ -28,6 +28,7 @@ variable "identity_type" {
     default = "SystemAssigned"
 }
 
- variable "parameters" {
-    type = map(string)
-  }
+variable "parameters" {
+  type = string
+  default = "{\"tagName\": \"Platform\"}"
+}
