@@ -45,4 +45,16 @@ policy_rule = <<POLICY_RULE
       }
 }
       POLICY_RULE
+      
+parameters = <<PARAMETERS
+{
+  "tagName": {
+    "type": "String",
+    "metadata": {
+      "description": "Name of the tag to inherit from the subscription",
+      "displayName": "Tag Name"
+    }
+  }
+}
+PARAMETERS
 }
