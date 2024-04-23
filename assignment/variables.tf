@@ -29,5 +29,5 @@ variable "identity_type" {
 }
 
  variable "parameters" {
-    type = map()
+    type = map(map(string))
   }
