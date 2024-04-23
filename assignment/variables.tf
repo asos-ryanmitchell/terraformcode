@@ -30,10 +30,8 @@ variable "identity_type" {
 
 variable "parameters" {
   description = "The parameters for the Policy Assignment."
-  type = object({
-    tagName = string
-  })
-  default = {
+  type = map(string)
+default = {
     tagName = "Platform"
   }
 }
